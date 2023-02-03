@@ -8,7 +8,10 @@ import os
 num = float(input("Enter a distance in km: "))
 ans = num / 1.61
 print("There are", round(ans, 2), "miles in", num, "km.")
-time_min = float(input("Enter a time in minutes: "))
+default_time = 42.7
+
+default_ratio = 0.1455
+time_min = ans / default_ratio
 
 pace = time_min / ans
 print("Your average pace is", round(pace, 2), "minutes per mile.")
